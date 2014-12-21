@@ -73,6 +73,6 @@
 
 # Part 8: Creates a second, independent tidy data set with the average of each variable for each activity and each subject
   tidy_avg_data_set <- aggregate(tidy_data_set[,3:dim(tidy_data_set)[2]], list(tidy_data_set$activity, tidy_data_set$subject), mean)
-  names(tidy_avg_data_set)[1:2] <- c('subject', 'activity')
+  names(tidy_avg_data_set)[1:2] <- c('activity', 'subject')
   write.csv(tidy_avg_data_set, file="tidy_avg_data_set.csv")
   write.table(tidy_avg_data_set, file="tidy_avg_data_set.txt", row.name=FALSE)
