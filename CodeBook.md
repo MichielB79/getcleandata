@@ -1,5 +1,15 @@
 ## Codebook
-The data sets contain 81 variables:
+
+The first data set shows the same data as in the original data set.
+The second and third data set show averages for each activity and each subject.
+
+1. mean: mean value
+2. std: standard deviation
+3. 'x, y, z' is used to denote 3-axial signals in the X, Y and Z directions
+
+
+### Contents
+The data sets contain 68 variables:
 
 1. subject = the subjects assigned number in the original experiment (1 to 30)
 2. activity = indicating activity type 
@@ -9,16 +19,6 @@ The data sets contain 81 variables:
     - WALKING
     - WALKING_DOWNSTAIRS
     - WALKING_UPSTAIRS
-
-The rest of the variables are by name the same as in the original data set. 
-The first data set shows the same data as in the original data set.
-The second and third data set show averages for each activity and each subject.
-
-- mean(): mean value
-- std(): standard deviation
-- 'XYZ' is used to denote 3-axial signals in the X, Y and Z directions
- 
-
 3. tbodyacc_mean_x 
 4. tbodyacc_mean_y 
 5. tbodyacc_mean_z 
