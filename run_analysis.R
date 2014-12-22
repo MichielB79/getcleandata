@@ -59,8 +59,10 @@
 
   
 # Part 5: Extract only the measurements on the mean and standard deviation for each measurement
-  merge_x_extract <- merge_x[, grepl("mean|std", features$name)]
-
+  merge_x_extract <- merge_x[, !grepl("meanFreq", features$name)]
+  features_2 <- features[!grepl("meanFreq", features$name), ]
+  merge_x_extract <- merge_x_extract[, grepl("mean|std", features_2$name)]
+ 
   
 # Part 6: Create descriptive activity names and add the names to the data
   merge_y$activity <- activity_labels[merge_y$activity,]$name
